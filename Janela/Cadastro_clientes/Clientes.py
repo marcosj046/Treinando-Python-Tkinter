@@ -45,6 +45,7 @@ def cadastrar_cliente():
     entry_email.delete(0, "end")
     entry_telefone.delete(0, "end")
 
+#Criando a função para exportar as informações do banco em formato xlxs
 def exportar_cliente():
     conexao = sqlite3.connect('Clientes.db')
     c = conexao.cursor()
